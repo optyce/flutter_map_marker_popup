@@ -73,9 +73,9 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_map
-      url: "https://pub.dartlang.org"
+      url: "https://unpub.optyce.eu"
     source: hosted
-    version: "0.13.1"
+    version: "0.14.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
