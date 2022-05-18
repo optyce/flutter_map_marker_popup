@@ -14,7 +14,7 @@ class MarkerLayer extends StatefulWidget {
 
   // Forced to use this type by flutter_map
   // ignore: prefer_void_to_null
-  final Stream<Null>? stream;
+  final Stream<void>? stream;
 
   final PopupControllerImpl popupController;
 
@@ -71,7 +71,7 @@ class _MarkerLayerState extends State<MarkerLayer>
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<int?>(
-      stream: widget.stream, // a Stream<int> or null
+      stream: null, // a Stream<int> or null
       builder: (BuildContext context, AsyncSnapshot<int?> snapshot) {
         var markers = <Widget>[];
         final sameZoom = widget.map.zoom == lastZoom;
